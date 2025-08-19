@@ -1,0 +1,116 @@
+{
+  "hallucination_patterns": {
+    "japanese": [
+      "ご視聴ありがとうございました",
+      "ご視聴ありがとうございました。",
+      "ありがとうございました",
+      "ありがとうございました。",
+      "どうもありがとうございました",
+      "どうもありがとうございました。",
+      "どうも、ありがとうございました",
+      "どうも、ありがとうございました。",
+      "おやすみなさい",
+      " おやすみなさい。",
+      "おやすみなさい。",
+      "終わり",
+      "おわり",
+      "お疲れ様でした",
+      "お疲れ様でした。",
+      "最初からやりのをしてください",
+      "やり直してください",
+      "最初が",
+      "お疲れ様",
+      "お疲れ様です",
+      "ありがとう",
+      "どうも",
+      "さようなら",
+      "バイバイ",
+      "終了",
+      "完了"
+    ],
+    "english": [
+      "Thanks for watching!",
+      "Thanking You",
+      "Thank you.",
+      "All right.",
+      "Bye.",
+      "Okay.",
+      "Yeah.",
+      ".",
+      "Do you agree?",
+      "It's a little bit different.",
+      "First",
+      "Please try again.",
+      "Please do the first one.",
+      "Thank you for watching",
+      "End of",
+      "Goodbye",
+      "See you",
+      "That's all",
+      "The end",
+      "Fin"
+    ],
+    "chinese": [
+      "那他说他说",
+      "最初からやりのをしてください",
+      "最初",
+      "重新开始吧。",
+      "祝贺",
+      "Congratulations",
+      "谢谢",
+      "再见",
+      "结束",
+      "完了"
+    ],
+    "mixed_languages": [
+      " E aí",
+      " Obrigado.",
+      " Gracias.",
+      " Obrigada.",
+      " Продолжение следует...",
+      " तो अस दे दाहीं के दाहीं"
+    ],
+    "common_patterns": [
+      "Thank you for watching",
+      "End of",
+      "Goodbye",
+      "See you",
+      "That's all",
+      "The end",
+      "Fin",
+      "終了",
+      "完了",
+      "お疲れ様",
+      "お疲れ様でした",
+      "お疲れ様です",
+      "ありがとう",
+      "どうも",
+      "さようなら",
+      "バイバイ"
+    ],
+    "suspicious_patterns": {
+      "very_short": 3,
+      "generic_responses": {
+        "english": ["okay", "yeah", "yes", "no", "maybe", "sure"],
+        "japanese": ["はい", "いいえ", "うん", "そう", "まあ"],
+        "chinese": ["是的", "不是", "好的", "可以", "也许"]
+      },
+      "ending_phrases": {
+        "english": ["thank you", "goodbye", "bye", "end", "fin"],
+        "japanese": ["ありがとう", "さようなら", "バイバイ", "終了", "完了"],
+        "chinese": ["谢谢", "再见", "结束", "完了"]
+      },
+      "suspicious_scripts": {
+        "cyrillic": ["а", "б", "в", "г", "д", "е", "ё", "ж", "з"],
+        "devanagari": ["अ", "आ", "इ", "ई", "उ", "ऊ", "ए", "ऐ", "ओ", "औ"]
+      }
+    }
+  },
+  "detection_settings": {
+    "enable_hallucination_detection": true,
+    "strict_mode": false,
+    "log_hallucinations": true,
+    "skip_hallucinations": true,
+    "confidence_threshold": 0.8
+  }
+}

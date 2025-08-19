@@ -1,0 +1,38 @@
+{
+  "model_size": "base",
+  "languages": ["en", "ja", "zh"],
+  "chunk_duration": 3.0,
+  "sample_rate": 16000,
+  "silence_threshold": 0.5,
+  "amplitude_threshold": 0.01,
+  "use_cuda": false,
+  "translation_timeout": 10,
+  "audio_quality": {
+    "channels": 1,
+    "dtype": "float32",
+    "blocksize_ms": 100
+  },
+  "display": {
+    "show_timestamps": true,
+    "show_language_flags": true,
+    "clear_screen": false,
+    "max_line_length": 80
+  },
+  "translation_providers": {
+    "ollama": {
+      "enabled": true,
+      "model": "qwen2.5:3b",
+      "timeout": 10
+    },
+    "http": {
+      "enabled": false,
+      "endpoint": "http://localhost:8000/translate",
+      "timeout": 30
+    }
+  },
+  "performance": {
+    "max_concurrent_translations": 3,
+    "audio_buffer_size": 1024,
+    "enable_parallel_processing": true
+  }
+}

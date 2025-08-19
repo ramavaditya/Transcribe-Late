@@ -1,0 +1,24 @@
+# Enhanced Terminal Transcription & Translation Requirements
+# Core dependencies
+numpy>=1.21.0
+sounddevice>=0.4.6
+
+# Whisper implementations (choose one)
+faster-whisper>=1.1.0  # Recommended for better performance
+# openai-whisper>=20231117  # Alternative implementation
+
+# Audio processing
+scipy>=1.7.0
+soundfile>=0.12.0
+
+# Translation providers
+requests>=2.25.0  # For HTTP translation APIs
+# ollama  # Install separately: https://ollama.ai/
+
+# Optional: CUDA support for faster-whisper
+# torch>=2.0.0  # Install from pytorch.org for CUDA support
+# torchaudio>=2.0.0
+
+# Development dependencies (optional)
+# watchdog>=2.1.0  # For file watching (if needed)
+# pyaudio>=0.2.11  # Alternative audio backend
