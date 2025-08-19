@@ -137,7 +137,7 @@ If you already see these folders with `model.bin` inside, you're good to go.
   "translation_providers": {
     "ollama": {
       "enabled": true,
-      "model": "qwen2.5:3b"
+      "model": "schroneko/gemma-2-2b-jpn-it"
     }
   }
 }
@@ -240,7 +240,7 @@ python main.py --silence-threshold 0.3
 #### Translation Not Working
 ```bash
 # Install Ollama: https://ollama.ai/
-# Pull translation model: ollama pull qwen2.5:3b
+# Pull translation model: ollama pull schroneko/gemma-2-2b-jpn-it
 # Verify Ollama is running: ollama list
 ```
 
