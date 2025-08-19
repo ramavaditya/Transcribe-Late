@@ -51,7 +51,7 @@ python main.py --config config.json
 ### System Requirements
 - **Python 3.8+**
 - **Microphone** (built-in or external)
-- **4GB+ RAM** (8GB+ recommended)
+- **6GB+ RAM** (8GB+ recommended)
 - **Windows 10/11**, **macOS**, or **Linux**
 
 ### Python Dependencies (from `requirements.txt`)
@@ -288,7 +288,7 @@ python main.py --silence-threshold 0.3
 pip install --upgrade -r requirements.txt
 
 # Update Ollama models
-ollama pull gemma3:1b
+ollama pull schroneko/gemma-2-2b-jpn-it
 ```
 
 ### Model Updates

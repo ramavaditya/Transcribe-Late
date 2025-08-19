@@ -306,7 +306,7 @@ class TerminalTranscriber:
             prompt = f"Translate this text from {lang_names.get(source_lang, source_lang)} to {lang_names.get(target_lang, target_lang)}. Output only the translation:\n\n{text}"
             
             result = subprocess.run([
-                "ollama", "run", "gemma3:1b"
+                "ollama", "run", "schroneko/gemma-2-2b-jpn-it"
             ], input=prompt.encode('utf-8'), capture_output=True, timeout=10)
             
             if result.returncode == 0:
